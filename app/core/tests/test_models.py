@@ -1,13 +1,13 @@
 """
 Tests for models.
 """
-from unittest.mock import patch
-from decimal import Decimal
+from unittest.mock import patch # noqa: F401
+from decimal import Decimal # noqa: F401
 
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 
-from core import models
+from core import models # noqa: F401
 
 
 def create_user(email='user@example.com', password='testpass123'):

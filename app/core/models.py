@@ -1,16 +1,17 @@
 """
 Database models.
 """
-import uuid
-import os
+import uuid # noqa: F401
+import os # noqa: F401
 
-from django.conf import settings
+from django.conf import settings # noqa: F401
 from django.db import models
 from django.contrib.auth.models import (
     AbstractBaseUser,
     BaseUserManager,
     PermissionsMixin,
 )
+
 
 class UserManager(BaseUserManager):
     """Manager for users."""
@@ -33,6 +34,7 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
 
         return user
+
 
 class User(AbstractBaseUser, PermissionsMixin):
     """User in the system."""
