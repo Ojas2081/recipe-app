@@ -1,10 +1,10 @@
 """
 Database models.
 """
-import uuid # noqa: F401
-import os # noqa: F401
+import uuid  # noqa: F401
+import os  # noqa: F401
 
-from django.conf import settings # noqa: F401
+from django.conf import settings  # noqa: F401
 from django.db import models
 from django.contrib.auth.models import (
     AbstractBaseUser,

@@ -19,7 +19,7 @@ from drf_spectacular.views import (
 )
 
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include  # noqa: F401
 from django.conf.urls.static import static
 from django.conf import settings
 
