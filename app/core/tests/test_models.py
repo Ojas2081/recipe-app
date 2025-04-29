@@ -99,3 +99,4 @@ class ModelTests(TestCase):
 
         self.assertEqual(file_path, f'uploads/recipe/{uuid}.jpg')
 
+
